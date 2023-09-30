@@ -8,9 +8,9 @@
 4.	Lokasi Bootcamp: Lab Komputer USM</p>
 
 
-<h3>**II. Peserta Bootcamp**
-1.	Kualifikasi Peserta: Peserta bootcamp dapat terdiri dari individu dengan berbagai tingkat pengalaman, termasuk yang tidak memiliki pengalaman sebelumnya dalam pemrograman.
-2.	Kehadiran: Peserta diharapkan hadir tepat waktu dan berpartisipasi aktif dalam semua sesi dan seluruh kegiatan bootcamp.
+<h3>**II. Peserta Bootcamp**</h3>
+1.	Kualifikasi Peserta: Peserta bootcamp dapat terdiri dari individu dengan berbagai tingkat pengalaman, termasuk yang tidak memiliki pengalaman sebelumnya dalam pemrograman.<br>
+2.	Kehadiran: Peserta diharapkan hadir tepat waktu dan berpartisipasi aktif dalam semua sesi dan seluruh kegiatan bootcamp.<br>
 
 <h3>**III. Kurikulum dan Pembelajaran**
 1.	Kurikulum: Bootcamp akan mengikuti kurikulum yang telah ditentukan sebelumnya, yang mencakup topik-topik kunci dalam pengembangan perangkat lunak fullstack.
