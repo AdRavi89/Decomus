@@ -1,0 +1,85 @@
+body{
+  background-image: url("https://assets.epicurious.com/photos/57eebe2eb382c3c017d3fff0/16:9/w_2560%2Cc_limit/supermarket-shelves.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10px;
+}
+h1, h2, p {
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 45px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+hr {
+  height: 2px;
+  background-color: #a8dba8;
+  border-color:  #0b486b;
+}
+
+
+.belanja {
+  width: 80%;
+  background-color: #f5f975;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.tglbelanja {
+  font-style: italic;
+}
+.sayur, .meat, .fruits, .other {
+  text-align: left;
+  width: 70%;
+}
+/* Jarak Jumlah Barang dari Tepi */
+.jumlah {
+  text-align: right;
+  width: 15%;
+}
+
+.item p {
+  display: inline-block;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 18px;
+  font-family: Georgia, serif;
+}
+
+/* FOOTER */
+footer {
+  font-size: 10px;
+}
+/* posisi slogan  */
+.slogan {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* warna dasar */
+a:visited {
+  color: black;
+}
+/* warna sebelum di klik */
+a:hover {
+  color: magenta;
+}
+/* warna ketika di klik */
+a:active {
+  color: red;
+}

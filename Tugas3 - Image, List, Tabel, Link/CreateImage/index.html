@@ -1,0 +1,165 @@
+<html lang="en">
+<head>
+    <!-- Set karakter encoding -->
+    <meta charset="UTF-8">
+    
+    <!-- Konfigurasi kompatibilitas Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Konfigurasi viewport untuk responsif layout -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Judul halaman -->
+    <title>My Gallery!!</title>
+    
+    <!-- Menghubungkan file CSS eksternal -->
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+        
+    <!-- Mengatur favicon (ikon situs) -->
+    <link rel="icon" href="LogoAD.png"/>
+</head>
+<body>
+    <main>
+        <!-- Judul utama -->
+        <h1>My Gallery Photo</h1>
+        <hr>
+        
+        <!-- Judul kedua untuk slideshow -->
+        <h2 class="w3-center">Manual Slideshow</h2>
+
+        <!-- Container untuk slideshow -->
+        <div class="w3-content w3-display-container">
+            <!-- Gambar pertama dalam slideshow -->
+            <img class="mySlides" src="https://drive.google.com/uc?id=16Mi_6DKZja8sZ_OPsLj1UvYYLdGQVKHT" alt="Deskripsi Gambar" style="width:100%">
+            <!-- Gambar kedua dalam slideshow -->
+            <img class="mySlides" src="https://drive.google.com/uc?id=16dXk_6uL8BHyWQq32hNgy-oLkkalY9YW" alt="Deskripsi Gambar" style="width:100%">
+            <!-- Gambar ketiga dalam slideshow -->
+            <img class="mySlides" src="https://drive.google.com/uc?id=1Pkmkc2Yofyn0y5dsIBtsy539qvLQR5w1" alt="Deskripsi Gambar" style="width:100%">
+            <!-- Gambar keempat dalam slideshow -->
+            <img class="mySlides" src="https://drive.google.com/uc?id=1PR8T2MBir-SH1jRiw3eR4LSAstfpwus7" alt="Deskripsi Gambar" style="width:100%">
+            <!-- Gambar kelima dalam slideshow -->
+            <img class="mySlides" src="https://drive.google.com/uc?id=1Pcc8TiPHUssBf3oUILI3IooxXakdzxfO" alt="Deskripsi Gambar" style="width:100%">
+
+            <!-- Tombol navigasi kiri untuk slideshow -->
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <!-- Tombol navigasi kanan untuk slideshow -->
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+        </div>
+        <hr>
+        
+        <!-- Container untuk galeri gambar responsif -->
+        <div class="responsive">
+            <div class="image">
+                <!-- Tautan ke gambar pertama -->
+                <a target="_blank" href="img_kampus.jpeg"></a>
+                <!-- Gambar pertama dalam galeri -->
+                <img src="img/1667836057283.jpeg" alt="kampus" width="640" height="480">
+                <!-- Deskripsi gambar pertama -->
+                <div class="desc">Kampus Universitas Semarang</div>
+            </div>
+        </div>
+        
+        <!-- Container untuk galeri gambar responsif -->
+        <div class="responsive">
+            <div class="image">
+                <!-- Tautan ke gambar kedua -->
+                <a taget="_blank" href="img_mainan.jpeg"></a>
+                <!-- Gambar kedua dalam galeri -->
+                <img src="img/1667929415334.jpeg" alt="mainan" width="600" height="400">
+                <!-- Deskripsi gambar kedua -->
+                <div class="desc">Naik Ke Bukit</div>
+            </div>
+        </div>
+        
+        <!-- Container untuk galeri gambar responsif -->
+        <div class="responsive">
+            <div class="image">
+                <!-- Tautan ke gambar ketiga -->
+                <a target="_blank" href="img_mainan2.jpeg"></a>
+                <!-- Gambar ketiga dalam galeri -->
+                <img src="img/1667929455810.jpeg" alt="mainan" width="600" height="400">
+                <!-- Deskripsi gambar ketiga -->
+                <div class="desc">Hotwheels Honda Civic EF 1990</div>
+            </div>
+        </div>
+        
+        <!-- Container untuk galeri gambar responsif -->
+        <div class="responsive">
+            <div class="image">
+                <!-- Tautan ke gambar keempat -->
+                <a target="_blank" href="img_danau.jpeg"></a>
+                <!-- Gambar keempat dalam galeri -->
+                <img src="https://i2.wp.com/blog.tripcetera.com/id/wp-content/uploads/2020/10/Danau-Toba-edited.jpg" alt="DanauToba" width="600" height="400">
+                <!-- Deskripsi gambar keempat -->
+                <div class="desc">Pemandangan Danau Toba</div>
+            </div>
+        </div>
+        <hr>
+        <div class="w3-container w3-teal">
+  <h1>My Gallery</h1>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="img/1667836057283.jpeg" style="width:100%">
+      <div class="w3-container">
+        <h5><strong>Kampus Universitas Semarang</strong></h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="img/1667929415334.jpeg" style="width:100%">
+      <div class="w3-container">
+        <h5><strong>Naik Ke Bukit</strong></h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="img/1667929455810.jpeg" style="width:100%">
+      <div class="w3-container">
+        <h5><strong>Hotwheels Honda Civic EF 1990</strong></h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="img/PXL_20230915_072754830.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5><strong>Para Peserta Bootcamp Decomus</strong></h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="img/PXL_20230915_072846012.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5><strong>Para Peserta Bootcamp Decomus</strong></h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="img/1695273705659.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5><strong>Sekolah Tua</strong></h5>
+      </div>
+    </div>
+  </div>
+</div>
+    </main>
+    
+    <!-- Menghubungkan file JavaScript eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>
