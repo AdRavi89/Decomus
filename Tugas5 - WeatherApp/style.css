@@ -1,0 +1,215 @@
+/* Mengatur ulang beberapa gaya default untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+/* Gaya untuk halaman utama (body) */
+body {
+    min-height: 100vh;
+    /* Pastikan body mencakup setidaknya tinggi viewport */
+    display: flex;
+    /* Gunakan layout flex untuk tengah secara horizontal */
+    justify-content: center;
+    /* Tengahkan secara horizontal */
+    align-items: center;
+    /* Tengahkan secara vertikal */
+    background-color: #3ec0e0;
+    /* Tetapkan warna latar belakang */
+}
+
+/* Gaya untuk wadah utama */
+.container {
+    width: 400px;
+    /* Tetapkan lebar tetap */
+    height: min-content;
+    /* Sesuaikan tinggi berdasarkan konten */
+    background-color: #fff;
+    /* Warna latar belakang */
+    border-radius: 12px;
+    /* Tambahkan sudut membulat */
+    padding: 28px;
+    /* Tambahkan padding internal */
+}
+
+/* Gaya untuk kotak pencarian */
+.search-box {
+    width: 100%;
+    /* Isi lebar penuh */
+    height: min-content;
+    /* Sesuaikan tinggi berdasarkan konten */
+    display: flex;
+    /* Gunakan layout flex */
+    justify-content: space-between;
+    /* Menyusun item dengan jarak yang sama */
+    align-items: center;
+    /* Tengahkan item secara vertikal */
+}
+
+/* Gaya untuk input pencarian */
+.search-box input {
+    width: 100%;
+    /* Isi lebar penuh */
+    font-size: 20px;
+    /* Tetapkan ukuran font */
+    text-transform: capitalize;
+    /* Kapitalkan teks input */
+    color: #000;
+    /* Warna teks */
+    background-color: #e6f5fb;
+    /* Warna latar belakang */
+    padding: 12px 16px;
+    /* Padding internal */
+    border-radius: 14px;
+    /* Sudut membulat */
+}
+
+/* Gaya untuk teks placeholder pada input */
+.search-box input::placeholder {
+    color: #000;
+    /* Warna teks placeholder */
+}
+
+/* Gaya untuk tombol pencarian */
+.search-box button {
+    width: 46px;
+    /* Tetapkan lebar tetap */
+    height: 46px;
+    /* Tetapkan tinggi tetap */
+    background-color: #e6f5fb;
+    /* Warna latar belakang */
+    border-radius: 50%;
+    /* Bentuk menjadi lingkaran */
+    cursor: pointer;
+    /* Ubah kursor menjadi tanda penunjuk */
+    font-size: 20px;
+    /* Tetapkan ukuran font */
+}
+/* Gaya tombol pencarian saat dihover */
+.search-box button:hover {
+    color: #fff;
+    /* Ubah warna teks saat dihover */
+    background-color: #ababab;
+    /* Ubah warna latar belakang saat dihover */
+}
+
+/* Gaya untuk wadah informasi cuaca */
+.weather-body {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 20px;
+    /* Tambahkan margin di tingkat blok */
+    display: flex;
+    /* Sembunyikan awalnya */
+}
+/* Gaya untuk gambar dalam wadah cuaca */
+.weather-body img {
+    width: 60%;
+    /* Tetapkan lebar gambar */
+}
+
+/* Gaya untuk kotak cuaca */
+.weather-box {
+    margin-block: 20px;
+    /* Tambahkan margin di tingkat blok */
+    text-align: center;
+    /* Tengahkan teks */
+}
+/* Gaya untuk suhu */
+.weather-box .temperature {
+    font-size: 40px;
+    /* Tetapkan ukuran font */
+    font-weight: 800;
+    /* Tetapkan ketebalan font */
+    position: relative;
+    /* Gunakan posisi relatif */
+}
+/* Gaya untuk superskrip suhu */
+.weather-box .temperature sup {
+    font-size: 20px;
+    /* Tetapkan ukuran font */
+    position: absolute;
+    /* Gunakan posisi absolut */
+    font-weight: 600;
+    /* Tetapkan ketebalan font */
+}
+/* Gaya untuk deskripsi cuaca */
+.weather-box .description {
+    font-size: 20px;
+    /* Tetapkan ukuran font */
+    font-weight: 700;
+    /* Tetapkan ketebalan font */
+    text-transform: capitalize;
+    /* Kapitalkan teks */
+}
+/* Gaya untuk wadah detail cuaca */
+.weather-details {
+    width: 100%;
+    /* Isi lebar penuh */
+    display: flex;
+    /* Gunakan layout flex */
+    justify-content: space-between;
+    /* Menyusun item dengan jarak yang sama */
+    margin-top: 30px;
+    /* Tambahkan margin di atas */
+}
+/* Gaya untuk bagian kelembaban dan angin */
+.humidity,
+.wind {
+    display: flex;
+    /* Gunakan layout flex */
+    align-items: center;
+    /* Tengahkan item secara vertikal */
+}
+/* Gaya untuk bagian kelembaban */
+.humidity {
+    margin-left: 20px;
+    /* Tambahkan margin di kiri */
+}
+/* Gaya untuk bagian angin */
+.wind {
+    margin-right: 20px;
+    /* Tambahkan margin di kanan */
+}
+/* Gaya untuk ikon dalam detail cuaca */
+.weather-details i {
+    font-size: 36px;
+    /* Tetapkan ukuran font untuk ikon */
+}
+/* Gaya untuk teks dalam detail cuaca */
+.weather-details .text {
+    margin-left: 10px;
+    /* Tambahkan margin di kiri */
+    font-size: 16px;
+    /* Tetapkan ukuran font */
+}
+/* Gaya untuk teks span dalam detail */
+.text span {
+    font-size: 20px;
+    /* Tetapkan ukuran font */
+    font-weight: 700;
+    /* Tetapkan ketebalan font */
+}
+/* Gaya untuk pesan "lokasi tidak ditemukan" */
+.location-not-found {
+    margin-top: 20px;
+    /* Tambahkan margin di atas */
+    display: none;
+    /* Sembunyikan awalnya */
+    align-items: center;
+    /* Tengahkan item secara vertikal */
+    justify-content: center;
+    /* Tengahkan item secara horizontal */
+    flex-direction: column;
+    /* Tetapkan arah flex menjadi kolom */
+}
+/* Gaya untuk header pesan "lokasi tidak ditemukan" */
+.location-not-found h1 {
+    font-size: 20px;
+    /* Tetapkan ukuran font */
+}

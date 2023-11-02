@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css"> <!-- Menghubungkan file stylesheet CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Enter Your Location" class="input-box" /> <!-- Input untuk memasukkan lokasi -->
+            <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button> <!-- Tombol pencarian dengan ikon -->
+        </div>
+
+        <div class="location-not-found"> <!-- Pesan yang ditampilkan jika lokasi tidak ditemukan -->
+            <h1>Sorry, Location not found!!!</h1> <!-- Pesan kesalahan -->
+            <img src="/assets/404.png" alt="404 Error" /> <!-- Gambar kesalahan 404 -->
+        </div>
+
+        <div class="weather-body">
+            <img src="/assets/cloud.png" alt="Weather Image" class="weather-img" /> <!-- Gambar cuaca -->
+            <div class="weather-box">
+                <p class="temperature">0 <sup>&deg;C</sup></p> <!-- Temperatur dalam derajat Celsius -->
+                <p class="description">light rain</p> <!-- Deskripsi cuaca -->
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity"> <!-- Bagian kelembaban -->
+                    <i class="fa-sharp fa-solid fa-droplet"></i> <!-- Ikon tetes air (kelembaban) -->
+                    <div class="text">
+                        <span id="humidity">45%</span> <!-- Persentase kelembaban -->
+                        <p>Humidity</p> <!-- Label kelembaban -->
+                    </div>
+                </div>
+
+                <div class="wind"> <!-- Bagian kecepatan angin -->
+                    <i class="fa-solid fa-wind"></i> <!-- Ikon angin -->
+                    <div class="text">
+                        <span id="wind-speed">12Km/H</span> <!-- Kecepatan angin dalam kilometer per jam -->
+                        <p>Wind Speed</p> <!-- Label kecepatan angin -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script> <!-- Menghubungkan file JavaScript -->
+</body>
+
+</html>
