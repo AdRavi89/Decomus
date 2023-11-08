@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memanipulasi DOM</title>
+</head>
+<body>
+    <!-- Tombol dengan id "tombolSaya" -->
+    <button id="tombolSaya">Klik saya</button>
+
+    <script>
+        // Mendapatkan referensi ke tombol dengan id "tombolSaya"
+        var tombol = document.getElementById("tombolSaya");
+
+        // Menambahkan event listener untuk menangani klik tombol
+        tombol.addEventListener("click", function() {
+            // Mengubah teks tombol
+            tombol.innerHTML = "Tombol telah diklik!";
+        });
+    </script>
+</body>
+</html>

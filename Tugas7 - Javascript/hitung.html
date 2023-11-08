@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penghitung</title>
+</head>
+<body>
+        <h1>Penghitung Angka</h1>
+
+    <!-- Elemen teks untuk menampilkan angka -->
+    <p id="angka">0</p>
+
+    <!-- Tombol hitung dan reset -->
+    <button id="tombolHitung">Hitung</button>
+    <button id="tombolReset">Reset</button>
+
+    <script>
+        var angkaElement = document.getElementById("angka");
+        var tombolHitung = document.getElementById("tombolHitung");
+        var tombolReset = document.getElementById("tombolReset");
+
+        var angka = 0;
+
+        // Fungsi untuk mengupdate elemen teks dengan nilai angka saat ini
+        function updateAngka() {
+            angkaElement.textContent = angka;
+        }
+
+        // Event listener untuk tombol hitung
+        tombolHitung.addEventListener("click", function() {
+            angka++;
+            updateAngka();
+        });
+
+        // Event listener untuk tombol reset
+        tombolReset.addEventListener("click", function() {
+            angka = 0;
+            updateAngka();
+        });
+    </script>
+
+</body>
+</html>

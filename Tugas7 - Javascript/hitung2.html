@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penghitung</title>
+</head>
+<body>
+<h1>Penghitung Angka</h1>
+
+    <!-- Elemen input teks untuk memasukkan jumlah -->
+    <input type="number" id="jumlah" placeholder="Masukkan jumlah">
+
+    <!-- Tombol hitung dan reset -->
+    <button id="tombolHitung">Hitung</button>
+    <button id="tombolReset">Reset</button>
+
+    <!-- Elemen teks untuk menampilkan angka -->
+    <p id="angka">0</p>
+
+    <script>
+        var jumlahInput = document.getElementById("jumlah");
+        var tombolHitung = document.getElementById("tombolHitung");
+        var tombolReset = document.getElementById("tombolReset");
+        var angkaElement = document.getElementById("angka");
+
+        var angka = 0;
+
+        // Event listener untuk tombol hitung
+        tombolHitung.addEventListener("click", function() {
+            var jumlah = parseInt(jumlahInput.value);
+            angka += jumlah;
+            angkaElement.textContent = angka;
+        });
+
+        // Event listener untuk tombol reset
+        tombolReset.addEventListener("click", function() {
+            angka = 0;
+            angkaElement.textContent = angka;
+            jumlahInput.value = ""; // Menghapus input jumlah
+        });
+    </script>
+</body>
+</html>
