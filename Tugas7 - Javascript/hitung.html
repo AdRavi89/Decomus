@@ -7,7 +7,8 @@
     <title>Penghitung</title>
 </head>
 <body>
-        <h1>Penghitung Angka</h1>
+    <!-- Judul Halaman -->
+    <h1>Penghitung Angka</h1>
 
     <!-- Elemen teks untuk menampilkan angka -->
     <p id="angka">0</p>
@@ -17,10 +18,12 @@
     <button id="tombolReset">Reset</button>
 
     <script>
+        // Mendapatkan elemen yang diperlukan dari DOM
         var angkaElement = document.getElementById("angka");
         var tombolHitung = document.getElementById("tombolHitung");
         var tombolReset = document.getElementById("tombolReset");
 
+        // Variabel untuk menyimpan nilai angka
         var angka = 0;
 
         // Fungsi untuk mengupdate elemen teks dengan nilai angka saat ini
@@ -30,13 +33,17 @@
 
         // Event listener untuk tombol hitung
         tombolHitung.addEventListener("click", function() {
+            // Menambah nilai angka ketika tombol hitung diklik
             angka++;
+            // Memanggil fungsi untuk mengupdate tampilan angka
             updateAngka();
         });
 
         // Event listener untuk tombol reset
         tombolReset.addEventListener("click", function() {
+            // Mereset nilai angka ke 0 ketika tombol reset diklik
             angka = 0;
+            // Memanggil fungsi untuk mengupdate tampilan angka
             updateAngka();
         });
     </script>
